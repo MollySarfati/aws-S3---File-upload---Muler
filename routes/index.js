@@ -1,10 +1,13 @@
 var express = require('express');
 var router = express.Router();
+
 var multer = require('multer');
+//npm npm i --s multer
 var multerS3 = require('multer-s3');
+//npm i --s multer-s3
 var awsS3 = require('../functions/functionAWSS3');
 var AWS = require('aws-sdk');
-//https://github.com/howardmann/multer-s3-example/
+//npm i --s aws-sdk
 
 const AWS_S3_KEY = {
                 accessKeyId: process.env.AWS_ACCESS_KEY_ID,
