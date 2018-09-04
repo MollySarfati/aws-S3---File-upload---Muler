@@ -14,7 +14,7 @@ const AWS_S3_KEY = {
                 secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY_ID
               }
 
-const myBucket = 'rent-me2';
+const myBucket = 'YOUR BUCKET NAME';
 
 var [upload,s3] = awsS3.config(AWS_S3_KEY, myBucket);
 
